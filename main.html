@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #existing { display: none; margin-top: 10px; }
+    </style>
 </head>
 <body>
     <h1>Login Form</h1>
     <form id="loginForm">
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="password" id="password" placeholder="Password" required>
+        <input type="text" id="username" placeholder="Username" required><br><br>
+        <input type="password" id="password" placeholder="Password" required><br><br>
         <label>
             <input type="checkbox" id="checkbox"> Remember me.
-        </label>
-        <button type="submit">Submit</button>
+        </label><br><br>
+        <input type="submit" id="submit" value="Submit">
     </form>
-    <button id="existing" style="display: none;">Login as existing user</button>
+    <button id="existing">Login as existing user</button>
 
     <script src="your_script.js"></script>
 </body>
 </html>
+
